@@ -137,21 +137,19 @@ ul {
     width: 100%;
     display: grid;
     /* not compatible 320px width (Iphone 5/se below) */
-    /* TODO: RWD adjustment */
+    /* RWD adjustment in media query */
     grid-template-columns: repeat(auto-fit, minmax(345px, 2fr));
     grid-template-rows: auto;
 }
 
 .about-detail {
-    /* border: 1px solid #fff; */
     padding: 3%;
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 .about-detail h3 {
-    transform: translateX(40%);
+    /* TODO: reposition */
+    text-align: center;
 }
 
 .detail-items {
@@ -167,8 +165,8 @@ ul {
 }
 
 .my-potrait img {
-    width: inherit;
-    height: inherit;
+    width: 163px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -528,9 +526,7 @@ ul {
 /* media query */
 @media only screen and (max-width: 1095px) {
 
-    /* .about-timeline {
-        grid-column: span 1;
-    } */
+
     .about-detail {
         grid-column: span 2;
     }
