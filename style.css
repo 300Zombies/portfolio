@@ -138,14 +138,13 @@ ul {
     display: grid;
     /* not compatible 320px width (Iphone 5/se below) */
     /* TODO: RWD adjustment */
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 2fr));
     grid-template-rows: auto;
 }
 
 .about-detail {
     /* border: 1px solid #fff; */
     padding: 3%;
-    border-collapse: collapse;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -161,8 +160,8 @@ ul {
 }
 
 .my-potrait {
-    width: 160px;
-    height: 200px;
+    width: 163px;
+    height: 180px;
     position: relative;
     object-fit: cover;
 }
@@ -174,7 +173,6 @@ ul {
 }
 
 .about-timeline {
-    /* border: 1px solid #fff; */
     padding: 2%;
     position: relative;
     display: grid;
@@ -309,7 +307,6 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 87%; */
     height: 100%;
     background: linear-gradient(to right, #003270, #2b80ff);
 }
@@ -327,7 +324,6 @@ ul {
 }
 
 /* skills end */
-
 /* breaking */
 .breaking {
     position: relative;
@@ -348,9 +344,6 @@ ul {
     font-size: 24px;
     font-weight: bold;
     color: #b8a01c
-        /* line-height: 22px; */
-        /* padding: 3px 5px 0 0; */
-        /* float: left; */
 }
 
 .breaking-bg {
@@ -533,6 +526,16 @@ ul {
 
 
 /* media query */
+@media only screen and (max-width: 1095px) {
+
+    /* .about-timeline {
+        grid-column: span 1;
+    } */
+    .about-detail {
+        grid-column: span 2;
+    }
+}
+
 @media only screen and (max-width: 500px) {
 
     /* uni */
