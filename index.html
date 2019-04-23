@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Protfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="init();">
+    <nav class="nav" id="nav">
+        <div class="nav-logo"><a href="#greet">logo</a></div>
+        <ul class="nav-indexs" id="navIndexs">
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#footer">contact</a></li>
+        </ul>
+        <div class="nav-hamburger" id="navHamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <section class="content-section greet" id="greet">
+        <div class="greet-container">
+            <div>
+                <h2>Hi, I'm Jeffery.</h2>
+                <h3>This is my portfolio.</h3>
+            </div>
+        </div>
+        <img class="greet-bg" src="./img/planet.jpg" alt="space-view">
+    </section>
+    <section class="content-section about" id="about">
+        <div class="about-container">
+            <div class="about-detail">
+                <h3>about me</h3>
+                <div class="detail-items">
+                    <ul>
+                        <i class="fas fa-id-card fa-2x"></i>
+                        <li>Jeffery Liao</li>
+                        <i class="fas fa-birthday-cake fa-2x"></i>
+                        <li>1985/07/14</li>
+                        <i class="fas fa-envelope-square fa-2x"></i>
+                        <li>tndark@gmail.com</li>
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        <li>0938-729-716</li>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>
+                        <li>Taipei, Taiwan</li>
+                    </ul>
+                    <div class="my-potrait">
+                        <img class="thwomp" src="./img/thwomp.gif" alt="myportait" srcset="">
+                        <p>This thwomp, my potrait place holder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-timeline">
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        2018 Jun
+                    </h4>
+                    <div class="description">
+                        <h4>The Crossroad</h4>
+                        <p>I learned that software engineering is relatively wanted skill than others. After weeks of
+                            pondering I made up my mind to give it a try.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        2018 Aug
+                    </h4>
+                    <div class="description">
+                        <h4>The Basics</h4>
+                        <p>There are lots of courses on <a href="https://train.csie.ntu.edu.tw/train/">CSIE </a>
+                            website. Took front-end web courses.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        2018 Oct
+                    </h4>
+                    <div class="description">
+                        <h4>JavaScript & PHP</h4>
+                        <p>Learned canvas, FB SDK and had a little bit taste of PHP, MySQL & Express.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        2018 Nov
+                    </h4>
+                    <div class="description">
+                        <h4>Python</h4>
+                        <p>There are at least 5 to 6 different Python courses at the same time! Gotta try the Python web
+                            crawler.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        2019 Feb
+                    </h4>
+                    <div class="description">
+                        <h4>Firebase & Node.js</h4>
+                        <p>Advanced JavaScript courses for the interactions between server and Firebase.</p>
+                    </div>
+                </div>
+                <div class="timeline-item glowing-border">
+                    <h4 class="date">
+                        the future
+                    </h4>
+                    <div class="description">
+                        <h4>The More To Come</h4>
+                        <p>Bought some online tutorial like SCSS, Django, Flask, D3.js. Aiming to become a front-end
+                            developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section skills" id="skills">
+        <div class="skills-container">
+            <h1>Skills</h1>
+            <p>Mostly I learned from NTU CSIE courses and from online like Udemy and Youtube.</p>
+            <div class="skill">
+                <div class="skill-label">
+                    <h3>HTML & CSS</h3>
+                    <span class="percent">85%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="width:85%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <h3>JavaScript</h3>
+                    <span class="percent">75%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="width:75%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <h3>PHP</h3>
+                    <span class="percent">60%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="width:60%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-label">
+                    <h3>Python</h3>
+                    <span class="percent">70%</span>
+                </div>
+                <div class="bar">
+                    <div class="progress" style="width:70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="breaking">
+        <article>"Einstein was wrong when he said 'God does not play dice'. Consideration of black holes suggests, not
+            only that God does play dice, but that he sometimes confuses us by throwing them where they can't be seen."
+            -Stephen Hawking
+        </article>
+        <img class="breaking-bg" src="./img/m87.jpg" alt="m87-blackhole">
+    </section>
+    <section class="content-section project" id="project">
+        <div class="project-container">
+            <div class="skewed-border">
+                <div class="content">
+                    <h2>01</h2>
+                    <h3>service One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad eos quam illum id eaque
+                        cupiditate
+                        nihil, maiores odit accusamus?</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="skewed-border">
+                <div class="content">
+                    <h2>02</h2>
+                    <h3>service Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad eos quam illum id eaque
+                        cupiditate
+                        nihil, maiores odit accusamus?</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="skewed-border">
+                <div class="content">
+                    <h2>03</h2>
+                    <h3>service Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad eos quam illum id eaque
+                        cupiditate
+                        nihil, maiores odit accusamus?</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="skewed-border">
+                <div class="content">
+                    <h2>04</h2>
+                    <h3>service Four</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ad eos quam illum id eaque
+                        cupiditate
+                        nihil, maiores odit accusamus?</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="icons">
+                <p>Leave me a message</p>
+                <i class="fab fa-facebook fa-2x"></i>
+                <i class="fab fa-github-square fa-2x"></i>
+                <i class="fab fa-codepen fa-2x"></i>
+
+            </div>
+            <div class="contact">
+                <p>Or cantact me via</p>
+                <i class="fas fa-envelope-square fa-2x"></i>
+                <i class="fas fa-mobile-alt fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
