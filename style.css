@@ -129,6 +129,10 @@ ul {
     position: absolute;
 }
 
+.greet-text {
+    transform: translateY(100px);
+}
+
 /* greet end */
 
 /* about */
