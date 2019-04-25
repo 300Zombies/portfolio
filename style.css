@@ -27,6 +27,13 @@ ul {
     list-style-type: none;
 }
 
+.content-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* universal end */
 
 /* nav */
@@ -132,6 +139,7 @@ ul {
     color: #eeeeee;
     height: 120vh;
     overflow: hidden;
+    padding: 0;
 }
 
 .greet-bg {
@@ -148,6 +156,10 @@ ul {
 /* greet end */
 
 /* about */
+.about {
+    padding: 40px 10px 0 10px;
+}
+
 .about-container {
     color: #eeeeee;
     width: 100%;
@@ -278,6 +290,10 @@ ul {
 /* about end */
 
 /* skills */
+.skills {
+    padding: 60px 10px 20px 10px;
+}
+
 .skills-container {
     color: #eeeeee;
     min-width: 360px;
@@ -377,6 +393,10 @@ ul {
 
 /* breaking end */
 /* project */
+.project {
+    padding-top: 20px;
+}
+
 .project-container {
     position: relative;
     width: 90%;
@@ -539,15 +559,6 @@ ul {
 }
 
 /* footer end */
-.content-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2% 2%;
-}
-
-
 
 /* media query */
 @media only screen and (max-width: 1095px) {
