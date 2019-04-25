@@ -338,8 +338,15 @@ ul {
     color: #fff;
 }
 
-.breaking article {
+.hawking-quote {
     width: 80%;
+    transition: 1.5s ease-in;
+}
+
+.blackhole {
+    transform: rotate(360deg) scale(0);
+    opacity: 0;
+    transition: 1.5s ease-in;
 }
 
 .breaking article::first-letter {
@@ -511,9 +518,15 @@ ul {
     justify-content: center;
 }
 
-.icons *,
-.contact * {
-    margin: 10px;
+.icons a,
+.contact a {
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.icons p,
+.contact p {
+    padding: 12px;
 }
 
 /* footer end */

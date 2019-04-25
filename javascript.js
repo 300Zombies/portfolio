@@ -4,6 +4,8 @@ function init() {
     const navIndex = document.querySelectorAll("#navIndexs li");
     const navHamburger = document.querySelector("#navHamburger");
     const about = document.querySelector("#about");
+    const breaking = document.querySelector(".breaking");
+    const hawkingQuote = document.querySelector(".breaking article");
 
     window.addEventListener("scroll", () => {
         parallax(".greet-bg", window.scrollY, 0.75);
@@ -18,6 +20,12 @@ function init() {
             nav.classList.add("nav");
             navHamburger.classList.remove("nav-hamburger-scroll");
             navHamburger.classList.add("nav-hamburger");
+        }
+
+        if (window.scrollY > (breaking.offsetTop + (breaking.clientHeight * 1 / 5))) {
+            hawkingQuote.classList.add("blackhole");
+        } else if (window.scrollY < breaking.offsetTop) {
+            hawkingQuote.classList.remove("blackhole");
         }
     });
 
