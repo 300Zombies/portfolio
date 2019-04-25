@@ -1,15 +1,15 @@
 function init() {
     const nav = document.querySelector("#nav");
-    const navIndexs = document.querySelector("#navIndexs");
-    const navIndex = document.querySelectorAll("#navIndexs li");
+    const navIndexes = document.querySelector("#navIndexes");
+    const navIndex = document.querySelectorAll("#navIndexes li");
     const navHamburger = document.querySelector("#navHamburger");
     const about = document.querySelector("#about");
     const breaking = document.querySelector(".breaking");
     const hawkingQuote = document.querySelector(".breaking article");
 
+    parallax(".greet-bg", window.scrollY, 0.75);
     window.addEventListener("scroll", () => {
         parallax(".greet-bg", window.scrollY, 0.75);
-        // FIXME: navbar display error afer refresh
         if ((window.scrollY + nav.offsetHeight) >= about.offsetTop) {
             nav.classList.remove("nav");
             nav.classList.add("nav-scroll");
@@ -30,7 +30,7 @@ function init() {
     });
 
     navHamburger.addEventListener("click", () => {
-        navIndexs.classList.toggle("nav-indexs-active");
+        navIndexes.classList.toggle("nav-indexes-active");
         navIndex.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = "";

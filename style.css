@@ -46,6 +46,17 @@ ul {
     opacity: 0.5;
 }
 
+.nav-indexes li a:hover {
+    font-weight: bold;
+    color: #00bcd4;
+    transition: 0.5s ease-out;
+}
+
+.nav-logo:hover {
+    color: #00bcd4;
+    transition: 0.5s ease-out;
+}
+
 .nav-scroll {
     background: #fff;
     color: #000;
@@ -59,20 +70,21 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0.8;
 }
 
-.nav-indexs {
+.nav-indexes {
     display: inline-block;
     display: flex;
 }
 
-.nav-indexs li {
+.nav-indexes li {
     padding-left: 10px;
     padding-right: 6px;
     letter-spacing: 2px;
 }
 
-.nav-indexs li:not(:first-child)::before {
+.nav-indexes li:not(:first-child)::before {
     content: "/";
     letter-spacing: 14px;
 }
@@ -117,8 +129,8 @@ ul {
 
 /* greet  */
 .greet {
-    color: #fff;
-    height: 100vh;
+    color: #eeeeee;
+    height: 120vh;
     overflow: hidden;
 }
 
@@ -137,7 +149,7 @@ ul {
 
 /* about */
 .about-container {
-    color: #fff;
+    color: #eeeeee;
     width: 100%;
     display: grid;
     /* not compatible 320px width (Iphone 5/se below) */
@@ -152,7 +164,6 @@ ul {
 }
 
 .about-detail h3 {
-    /* TODO: reposition */
     text-align: center;
 }
 
@@ -165,7 +176,7 @@ ul {
     width: 163px;
     height: 180px;
     position: relative;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .my-potrait img {
@@ -237,7 +248,7 @@ ul {
     padding: 12px;
     display: flex;
     justify-content: center;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #eeeeee;
 }
 
 .date::before {
@@ -245,7 +256,7 @@ ul {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: #eeeeee;
     transform: translate(60px, 5px);
     border-radius: 50%;
 }
@@ -268,7 +279,7 @@ ul {
 
 /* skills */
 .skills-container {
-    color: #fff;
+    color: #eeeeee;
     min-width: 360px;
     background: #072858;
     padding: 20px;
@@ -294,7 +305,7 @@ ul {
 .skills-container .skill h3 {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #eeeeee;
 }
 
 .skills-container .skill .bar {
@@ -321,7 +332,7 @@ ul {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #fff;
+    background: #eeeeee;
     box-shadow: 0 0 25px rgba(41, 123, 247, 1);
 }
 
@@ -335,7 +346,7 @@ ul {
     padding: 2% 2%;
     height: 85vh;
     overflow: hidden;
-    color: #fff;
+    color: #eeeeee;
 }
 
 .hawking-quote {
@@ -372,11 +383,12 @@ ul {
     display: grid;
     /* auto-fill vs auto-fit */
     /* not compatible 320px width (Iphone 5/se below) */
+    /* minimum viewport width is 375px (I phone X) */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: auto;
     /* vertical grid gap for RWD */
     grid-gap: 20px 40px;
-    /* padding up and down for RWD */
+    /* padding vertical for RWD */
     padding: 60px 0;
 }
 
@@ -387,7 +399,6 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #fff */
 }
 
 .project-container .skewed-border::before {
@@ -397,7 +408,6 @@ ul {
     right: -2px;
     bottom: -2px;
     left: -2px;
-    /* background: #fff; */
     transform: skew(2deg, 2deg);
     z-index: -1;
 }
@@ -457,13 +467,13 @@ ul {
     padding: 0;
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+    color: #eeeeee;
 }
 
 .skewed-border .content p {
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #eeeeee;
     font-size: 16px;
 }
 
@@ -472,9 +482,9 @@ ul {
     margin: 20px 0 0;
     padding: 10px 20px;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid #eeeeee;
     display: inline-block;
-    color: #fff;
+    color: #eeeeee;
     transition: 0.5s;
     transform: translateY(-40px);
     opacity: 0;
@@ -490,7 +500,7 @@ ul {
 
 .skewed-border:hover .content a:hover {
     color: #000;
-    background: #fff;
+    background: #eeeeee;
 }
 
 /* project end */
@@ -498,13 +508,12 @@ ul {
 .footer {
     position: relative;
     display: flex;
-    color: #fff;
+    color: #eeeeee;
     justify-content: center;
     background: #041c40;
 }
 
 .footer-container {
-    /* border: 1px solid #fff; */
     width: 80%;
     height: 100%;
     display: grid;
@@ -557,7 +566,7 @@ ul {
     }
 
     /* nav */
-    .nav-indexs {
+    .nav-indexes {
         position: absolute;
         background: inherit;
         top: 5vh;
@@ -572,15 +581,15 @@ ul {
         transition: transform 0.5s ease;
     }
 
-    .nav-indexs li {
+    .nav-indexes li {
         opacity: 0;
     }
 
-    .nav-indexs-active {
+    .nav-indexes-active {
         transform: translateX(0%);
     }
 
-    .nav-indexs li:not(:first-child)::before {
+    .nav-indexes li:not(:first-child)::before {
         content: "";
     }
 
@@ -590,6 +599,7 @@ ul {
     }
 }
 
+/* aquired by JS */
 @keyframes navIndexFade {
     form {
         opacity: 0;
