@@ -491,6 +491,7 @@ ul {
 }
 
 .skewed-border .content p {
+    /* project desctiption lines 3 at best */
     margin: 0;
     padding: 0;
     color: #eeeeee;
